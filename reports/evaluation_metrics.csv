@@ -1,0 +1,7 @@
+class_name,precision,recall,f1_score,support,predicted_count,true_positives,false_positives,false_negatives,status_note
+NAME,1.0,1.0,1.0,3,3,3,0,0,
+EMAIL,1.0,1.0,1.0,3,3,3,0,0,
+PHONE_NUMBER,1.0,1.0,1.0,3,3,3,0,0,
+ADDRESS,1.0,1.0,1.0,3,3,3,0,0,
+GOVERNMENT_ID,1.0,1.0,1.0,3,3,3,0,0,
+MACRO_AVERAGE,1.0,1.0,1.0,15,15,15,0,0,Averaged across 5 predefined personal-data classes

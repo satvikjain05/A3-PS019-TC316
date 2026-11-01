@@ -1,0 +1,40 @@
+source_type,source_name,table_name,column_name,true_class,is_personal,description
+csv,customers.csv,,customer_id,NOT_PERSONAL,0,Customer primary key identifier
+csv,customers.csv,,full_name,NAME,1,Full customer legal/display name
+csv,customers.csv,,email_address,EMAIL,1,Primary email contact address
+csv,customers.csv,,phone_number,PHONE_NUMBER,1,Customer mobile phone number
+csv,customers.csv,,residential_address,ADDRESS,1,Customer residential mailing address
+csv,customers.csv,,synthetic_govt_id,GOVERNMENT_ID,1,Synthetic government identity proof placeholder
+csv,customers.csv,,contact_pref_token,NOT_PERSONAL,0,Ambiguous mixed column containing system tokens or partial strings
+csv,customers.csv,,account_status,NOT_PERSONAL,0,Account status flag
+csv,customers.csv,,loyalty_points,NOT_PERSONAL,0,Numeric loyalty rewards balance
+csv,customers.csv,,created_date,NOT_PERSONAL,0,Account registration timestamp
+csv,employees.csv,,emp_id,NOT_PERSONAL,0,Employee organizational ID
+csv,employees.csv,,employee_name,NAME,1,Employee full name
+csv,employees.csv,,work_email,EMAIL,1,Corporate email address
+csv,employees.csv,,contact_mobile,PHONE_NUMBER,1,Official employee telephone contact
+csv,employees.csv,,office_postal_address,ADDRESS,1,Assigned office physical address
+csv,employees.csv,,national_id_synthetic,GOVERNMENT_ID,1,Synthetic national ID placeholder for HR file
+csv,employees.csv,,internal_workstation_tag,NOT_PERSONAL,0,Hardware inventory asset tag
+csv,employees.csv,,department,NOT_PERSONAL,0,Corporate department
+csv,employees.csv,,job_title,NOT_PERSONAL,0,Job designation
+csv,employees.csv,,salary_band,NOT_PERSONAL,0,Compensation grade band
+csv,employees.csv,,joining_date,NOT_PERSONAL,0,Date of joining
+csv,support_tickets.csv,,ticket_id,NOT_PERSONAL,0,Helpdesk ticket identifier
+csv,support_tickets.csv,,requester_name,NAME,1,Customer requester full name
+csv,support_tickets.csv,,support_email,EMAIL,1,Contact email provided in support ticket
+csv,support_tickets.csv,,callback_number,PHONE_NUMBER,1,Phone number for escalation callbacks
+csv,support_tickets.csv,,dispatch_address,ADDRESS,1,Physical dispatch or replacement address
+csv,support_tickets.csv,,kyc_synthetic_ref,GOVERNMENT_ID,1,Synthetic verification document ID reference
+csv,support_tickets.csv,,device_fingerprint,NOT_PERSONAL,0,Cryptographic hash of client device
+csv,support_tickets.csv,,issue_category,NOT_PERSONAL,0,Support category classification
+csv,support_tickets.csv,,ticket_priority,NOT_PERSONAL,0,Support priority tier
+csv,support_tickets.csv,,resolution_time_hrs,NOT_PERSONAL,0,Duration to resolve issue in hours
+csv,support_tickets.csv,,is_escalated,NOT_PERSONAL,0,Escalation status flag
+sqlite,privacy_demo.db,system_logs,log_id,NOT_PERSONAL,0,Log entry identifier
+sqlite,privacy_demo.db,system_logs,timestamp,NOT_PERSONAL,0,Log timestamp
+sqlite,privacy_demo.db,system_logs,log_level,NOT_PERSONAL,0,Severity level
+sqlite,privacy_demo.db,system_logs,service_name,NOT_PERSONAL,0,Microservice identifier
+sqlite,privacy_demo.db,system_logs,status_code,NOT_PERSONAL,0,HTTP response code
+sqlite,privacy_demo.db,system_logs,latency_ms,NOT_PERSONAL,0,Roundtrip execution latency in ms
+sqlite,privacy_demo.db,system_logs,request_path,NOT_PERSONAL,0,API route path

@@ -1,0 +1,37 @@
+{
+  "version": "1.0.0",
+  "default_class_policies": {
+    "NAME": {
+      "default_purpose": "Account management & record keeping",
+      "default_retention_days": 365,
+      "legal_basis_recommendation": "Contractual Necessity / Consent",
+      "default_approved": false
+    },
+    "EMAIL": {
+      "default_purpose": "Account communication & service notifications",
+      "default_retention_days": 365,
+      "legal_basis_recommendation": "Contractual Necessity / Legitimate Interest",
+      "default_approved": false
+    },
+    "PHONE_NUMBER": {
+      "default_purpose": "Customer support & two-factor authentication (2FA)",
+      "default_retention_days": 180,
+      "legal_basis_recommendation": "Security / Contractual Necessity",
+      "default_approved": false
+    },
+    "ADDRESS": {
+      "default_purpose": "Order delivery & billing fulfillment",
+      "default_retention_days": 90,
+      "legal_basis_recommendation": "Contractual Necessity",
+      "default_approved": false
+    },
+    "GOVERNMENT_ID": {
+      "default_purpose": "Statutory identity verification (KYC compliance)",
+      "default_retention_days": 30,
+      "legal_basis_recommendation": "Legal Obligation (MeitY DPDP / RBI KYC)",
+      "default_approved": false
+    }
+  },
+  "field_overrides": {},
+  "reviewer_decisions": {}
+}

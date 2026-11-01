@@ -1,0 +1,216 @@
+# ==============================================================================
+# PS-019: Privacy Intelligence Engine — Comprehensive .gitignore
+# Platform: Python 3.11+, Streamlit, SQLite, Pandas, Pytest
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Byte-compiled / Optimized / Python Artifacts
+# ------------------------------------------------------------------------------
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+*.pyo
+
+# ------------------------------------------------------------------------------
+# 2. Virtual Environments
+# ------------------------------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ------------------------------------------------------------------------------
+# 3. Environment Variables, Secrets & Credentials
+# ------------------------------------------------------------------------------
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+# Explicitly preserve non-sensitive template
+!.env.example
+
+# Private cryptographic keys & certificates
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+id_rsa*
+id_ed25519*
+
+# ------------------------------------------------------------------------------
+# 4. Streamlit Secrets & Runtime Cache
+# ------------------------------------------------------------------------------
+.streamlit/secrets.toml
+src/.streamlit/secrets.toml
+*/.streamlit/secrets.toml
+# Ensure UI theme and server configuration remain tracked
+!.streamlit/config.toml
+!src/.streamlit/config.toml
+
+# ------------------------------------------------------------------------------
+# 5. IDE, Editor & Operating System Metadata
+# ------------------------------------------------------------------------------
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.project
+.pydevproject
+.settings/
+
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows metadata & desktop config
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux & Editor swap files
+*~
+*.swp
+*.swo
+.fuse_hidden*
+.directory
+
+# ------------------------------------------------------------------------------
+# 6. Pytest, Coverage & Testing Cache
+# ------------------------------------------------------------------------------
+.pytest_cache/
+*/.pytest_cache/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# ------------------------------------------------------------------------------
+# 7. Logs & Temporary Application Outputs
+# ------------------------------------------------------------------------------
+*.log
+logs/
+*.tmp
+*.temp
+*.bak
+*.sw?
+fix_test.py
+app_light_test.py
+prompt_temp.txt
+req.txt
+
+# State reset backups (generated when user triggers reset with backup in UI)
+config/backups/
+src/config/backups/
+*/backups/
+
+# ------------------------------------------------------------------------------
+# 8. User Uploads & Sensitive Local Datasets
+# ------------------------------------------------------------------------------
+uploads/
+uploaded_files/
+user_data/
+temp_data/
+private/
+sensitive/
+data/private/
+data/uploads/
+data/*_real.*
+data/*_private.*
+data/*_unmasked.*
+
+# ------------------------------------------------------------------------------
+# 9. Local Databases & SQLite Locks
+# ------------------------------------------------------------------------------
+# Ignore SQLite lock, journal, and shared-memory files
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# Ignore local arbitrary SQLite databases
+*.sqlite
+*.sqlite3
+local_*.db
+private_*.db
+test_*.db
+
+# ------------------------------------------------------------------------------
+# 10. Generated Reports & Audit Exports
+# ------------------------------------------------------------------------------
+# Ignore temporary / ad-hoc report exports while preserving baseline demo reports
+exports/
+output/
+reports/temp_*
+reports/export_*
+reports/generated_*
+
+# ------------------------------------------------------------------------------
+# 11. Explicit Whitelist / Preserved Essential Assets
+# ------------------------------------------------------------------------------
+# Essential synthetic demo datasets & fixtures (required by app & tests)
+!data/
+!data/customers.csv
+!data/employees.csv
+!data/support_tickets.csv
+!data/labelled_test_data.csv
+!data/privacy_demo.db
+!data/data_dictionary.md
+
+# Essential governance policies & baseline configuration
+!config/
+!config/metadata.json
+!config/remediations.json
+!src/config/
+!src/config/metadata.json
+!src/config/remediations.json
+
+# Baseline compliance audit reports
+!reports/
+!reports/evaluation_metrics.csv
+!reports/privacy_audit_report.md
+!reports/privacy_evidence_inventory.csv
+!reports/privacy_evidence_inventory.json
